@@ -18,12 +18,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px !important;
+}
+
+a {
+    color: #75d1ff !important;
+}
+
+a:hover {
+    color: #50fa7b !important;
 }
 
 #kc-header-wrapper {
     font-family: good-times, sans-serif;
     font-size: 36px;
     color: #ffde66;
+    text-shadow: 0 0 10px #000000 !important;
 }
 
 /* Style the login dialog */
@@ -50,5 +60,6 @@ body {
 }
 
 #kc-form-buttons .pf-c-button:hover {
-    color: #ffde66;
+    background-color: #50fa7b !important;
+    transition: 0.5s ease-in-out;
 }
