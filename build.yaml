@@ -11,10 +11,9 @@ next:
 		base_image: quay.io/keycloak/keycloak:24.0.4
 		image_name: eons/keycloak.img
 		image_os: debian
-		env:
-			KEYCLOAK_SPI_THEME_DEFAULT: wi
 		also:
 		- COPY themes/ /opt/keycloak/themes/
+		- ENV KEYCLOAK_SPI_THEME_DEFAULT=wi # env is apparently broken, so this is our work around for now.
 		entrypoint: /opt/keycloak/bin/kc.sh
 		tags:
 		- "24.0.4"
