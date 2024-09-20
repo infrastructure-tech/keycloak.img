@@ -22,6 +22,7 @@ body {
 
 #kc-header-wrapper {
     font-family: good-times, sans-serif;
+    font-size: 36px;
     color: #ffde66;
 }
 
@@ -30,7 +31,8 @@ body {
     backdrop-filter: blur(10px);
     background-color: #282a36aa;
     border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    color: #f8f8f2 !important;
 }
 
 .kc-info-wrapper {
@@ -41,4 +43,12 @@ body {
 
 #kc-page-title {
     color: #75d1ff;
+}
+
+#kc-form-buttons .pf-c-button {
+    color: #0c0828;
+}
+
+#kc-form-buttons .pf-c-button:hover {
+    color: #ffde66;
 }
