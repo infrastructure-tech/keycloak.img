@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'good-times';
+    src: url('../fonts/good-times.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --pf-global--primary-color--100: #75d1ff;
+}
+
 body {
-    background-image: url('img/earth.jpg');
+    background-image: url('../img/earth.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,11 +20,25 @@ body {
     align-items: center;
 }
 
+#kc-header-wrapper {
+    font-family: good-times, sans-serif;
+    color: #ffde66;
+}
+
 /* Style the login dialog */
-#kc-content-wrapper {
+.card-pf {
     backdrop-filter: blur(10px);
     background-color: #282a36aa;
     border-radius: 6px;
-    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kc-info-wrapper {
+    background-color: #282a36aa;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#kc-page-title {
+    color: #75d1ff;
 }
