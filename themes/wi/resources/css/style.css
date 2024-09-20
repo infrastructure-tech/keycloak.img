@@ -1,0 +1,19 @@
+body {
+    background-image: url('img/earth.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the login dialog */
+#kc-content-wrapper {
+    backdrop-filter: blur(10px);
+    background-color: #282a36aa;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,27 @@
+build_in: build
+type: img
+name: keycloak.img
+clear_build_path: true
+next:
+- build: docker
+	build_in: docker
+	copy:
+	- ../themes: themes/
+	env:
+	- KEYCLOAK_SPI_THEME_DEFAULT: wi
+	config:
+		base_image: quay.io/keycloak/keycloak:24.0.4
+		image_name: eons/keycloak.img
+		image_os: debian
+		also:
+		- COPY themes/ /opt/keycloak/themes/
+		entrypoint: /opt/keycloak/bin/kc.sh
+		tags:
+		- "24.0.4"
+		- latest
+- build: docker_publish
+	run_when_any:
+	- release
+	build_in: publish
+	config:
+		image_name: eons/keycloak.img
