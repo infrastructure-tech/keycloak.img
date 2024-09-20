@@ -12,7 +12,7 @@ next:
 		image_name: eons/keycloak.img
 		image_os: debian
 		env:
-		- KEYCLOAK_SPI_THEME_DEFAULT: wi
+			KEYCLOAK_SPI_THEME_DEFAULT: wi
 		also:
 		- COPY themes/ /opt/keycloak/themes/
 		entrypoint: /opt/keycloak/bin/kc.sh
